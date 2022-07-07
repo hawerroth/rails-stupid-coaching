@@ -1,3 +1,70 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+// Defining a variable
+$gray: #F4F4F4;
+
+body {
+  background: $gray; // Using this variable
+}
+
+.container {
+  margin:20px;
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+  padding-top: 5px;
+  &:hover {
+    color: black;
+  }
+}
+
+.input_write {
+  width:240px;
+  height: 22px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius:5px;
+}
+
+.btn_ask {
+  background-color: blue;
+  height: 28px;
+  width: 45px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius:5px;
+  padding: 4px;
+  position: absolute;
+  left: 274px;
+}
+
+.question {
+  border-left: 5px lightgray solid;
+  padding:1px 10px;
+  background-color: rgb(234, 233, 230);
+  p{
+    font-style: italic;
+  }
+}
+
+.answer {
+  border-left: 5px lightgray solid;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 1px 10px;
+  background-color: rgb(246, 246, 184);
+  p{
+    font-style: italic;
+  }
+  h2 {
+    font-weight:bold;
+  }
+}
